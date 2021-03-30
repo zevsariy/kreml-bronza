@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{{title}}}</title>
+<meta name="description" content="{{{description}}}">
+<meta name="keywords" content="{{{keywords}}}">
+<link href="/css/main.css" rel="stylesheet">
+<body>
+<div class="wrapper">
+    <header>
+        <div class="header-logo">
+            <a href='/'></a>
+                <img src="/images/logo.png"  width="200"/>
+            </a>
+        </div>
+        <div class="header-menu">
+            <nav>
+                {{{menu_pages}}}
+            </nav>
+        </div>
+    </header>
+    <div class="content">
+        <div class="left-column">
+            <ul>
+                {{{menu_sections}}}
+            </ul>
+            <div class="nav-button">
+                <a href="#">Изделия в наличии</a>
+            </div>
+        </div>
+        <div class="right-column">
+            {{{content}}}
+        </div>
+        <div class="clr"></div>
+    </div>
+    <footer>
+        <div class="copyright">
+            <p>Все права защищены. Запрещено копирование материалов сайта без предварительного разрешения ©</p>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

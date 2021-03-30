@@ -1,0 +1,272 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+body{
+   font-family: 'Roboto Slab',serif;
+}
+.container-fluid
+{
+    background-color: rgba(250,250,250, 0.3);
+    color: #fff;
+}
+.main-my-fluid .lum-equal-wrap
+{
+    min-height: 1024px;
+}
+#socialbar
+{
+    border: 1px solid white;
+}
+#social-icons a
+{
+    color: #fff;
+    font:  18px 'Merriweather', serif;
+    padding: 0 34px 0 21px;
+    font-style: italic;
+}
+
+
+
+
+#equal-well nav.main-menu ul li.home.current-menu-item a:hover
+{
+    color: #6f0000;
+}
+
+
+
+
+.content-box, .content-box-large 
+{
+    margin-bottom:30px;
+    background:#fff;
+    border-radius:10px;
+    padding:10px;
+    border-left:1px solid #eee;
+    border-top:1px solid #eee;
+    border-right:2px solid #eee;
+    border-bottom:2px solid #eee; 
+    vertical-align: center;
+}
+
+.content-box-large 
+{
+    padding: 20px;
+}
+
+.table-bordered th,
+  .table-bordered td {
+    border: 1px solid #ddd !important;
+    color: #111;
+}
+
+//style of gallery
+
+#gallery_nav a .current {
+  border: 2px solid red;
+}
+#gallery_nav a {
+  display:inline-block;
+  border: 2px solid white;
+}
+#gallery_nav img {
+  display:block;
+}
+
+equal-well nav.main-menu ul li a, #equal-well nav.main-menu ul li.home.current-menu-item
+{
+    margin-left: 13px;
+}
+
+#lang-button
+{
+    float: right;
+    margin-top: -20px;
+}
+
+.products_store_button
+{
+    margin-top: 40px;
+    background: white;
+    text-align: center;
+}
+
+.products_store_button input, .products_store_button input:hover
+{
+    background: none;
+    color: #8a0000;
+    font: 20px 'Merriweather', serif;
+    font-style: italic;
+    margin: -5px;
+}
+
+.presentations_button
+{
+    margin-top: 40px;
+    background: rgba(0,0,0,0);
+    text-align: center;
+    border: 1px solid white;
+}
+
+.presentations_button input, .presentations_button input:hover
+{
+    background: none;
+    color: #fff;
+    font: 20px 'Merriweather', serif;
+    font-style: italic;
+    margin: -5px;
+}
+
+.section_description
+{
+    margin: -30px 0 30px 0px;
+}
+
+//слайдер бокс
+
+.slider-box{
+  position:relative;
+  width:320px;
+  height:210px;
+  overflow:hidden;
+}
+.slider{
+  position:relative;
+  width:10000px;
+  height:210px;
+}
+.slider img{
+  float:left;
+}
+.slider-box .prev, .slider-box .next{
+  position:absolute;
+  top:100px;
+  display:block;
+  width:29px;
+  height:29px;
+  cursor:pointer;
+}
+.slider-box .prev{
+  left:10px;
+  background:url(/images/slider_controls.png) no-repeat 0 0;
+}
+.slider-box .next{
+  right:10px;
+  background:url(/images/slider_controls.png) no-repeat -29px 0;
+}
+
+
+.product_wide_stairs
+{
+    padding: 20px;
+}
+.stairs_left
+{
+    float:left;
+    width: 30%;
+}
+.stairs_right
+{
+    margin-left: 20px;
+    float:left;
+    width: 65%;
+}
+.stairs_right h3
+{
+    text-align: center;
+}
+.stairs_right a, h3, p
+{
+    font: 18px 'Merriweather', serif;
+    font-style: italic;
+}
+.clr
+{
+    clear:both;
+}
+
+.product_wide_kamin
+{
+    text-align: center;
+    margin: 10%;
+}
+.product_wide_kamin img
+{
+    width: 99%;
+}
+.product_wide_kamin a p h3
+{
+   font: 14pt sans-serif;
+   font-style: italic; 
+}
+    
+....home ul li a:not(.current_section)
+{
+    font: 18px 'Merriweather', serif;
+    font-style: italic;
+}
+
+.current_section:not(.sections_small_font)
+{
+    text-decoration: none;
+    font: 20px 'Merriweather', serif;
+    font-style: italic;
+    color: #8a0000;
+}
+
+.sections_simple_font
+{
+    text-decoration: none;
+    font: 18px 'Merriweather', serif;
+    font-style: italic;
+}
+
+.sections_small_font
+{
+    text-decoration: none;
+    font: 14px 'Merriweather', serif;
+    font-style: italic;
+}
+
+.sections_small_font_red
+{
+    text-decoration: none;
+    font: 14px 'Merriweather', serif;
+    font-style: italic;
+    color: #8a0000 !important;
+}
+
+.product_tall
+{
+    float:left;
+    text-align: center;
+    margin-right: 21px;
+    margin-left: 21px;
+    margin-bottom: 20px;
+}
+
+.product_tall h3
+{
+    padding-top: 20px;
+}
+
+.product_tall img
+{ 
+    width: 350px;
+    height: 492px;
+}
+
+.menu-main-menu-container
+{
+    margin-top: 30px;
+}
+
+.send_button input
+{
+    text-align:center;
+    background: #fff;
+    color: #c10000;
+    border-radius: 5px;
+    float: right;
+    margin-right: 200px;
+    font: 20px 'Merriweather', serif;
+    font-style: italic;
+}

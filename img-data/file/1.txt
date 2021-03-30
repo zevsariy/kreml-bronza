@@ -1,0 +1,44 @@
+//Парсинг
+TJSONObject *xObj;
+TJSONArray *xArr;
+xObj = (TJSONObject*)TJSONObject::ParseJSONValue(me1->Text);
+
+xObj = (TJSONObject*)TJSONObject::ParseJSONValue(xObj->GetValue("response")->ToString());
+me2->Lines->Add("count: " + xObj->GetValue("count")->Value());
+
+xArr = (TJSONArray*) TJSONObject::ParseJSONValue(xObj->GetValue("items")->ToString());
+
+for(int i=0; i < xArr->Count; i++)
+{
+    xObj = (TJSONObject*)TJSONObject::ParseJSONValue(xArr->Items[i]->ToString());
+    me2->Lines->Add("id: " + xObj->GetValue("id")->Value());
+    me2->Lines->Add("title: " + xObj->GetValue("title")->Value());
+}
+
+xArr->DisposeOf();
+xObj->DisposeOf();
+//Парсинг
+TJSONObject *JSON_Req = new TJSONObject();
+TJSONObject *JSON_Data = new TJSONObject();
+
+JSON_Req->AddPair( new TJSONPair("action", "get"));
+JSON_Req->AddPair( new TJSONPair("module", "skills"));
+JSON_Req->AddPair( new TJSONPair("data", JSON_Data));
+JSON_Data->AddPair( new TJSONPair("user_id", user_id) );
+dm->req->AddParameter("json_data", JSON_Req->ToString());
+dm->req->Execute();
+
+
+TJSONObject* JSON_Resp(static_cast<TJSONObject*>(TJSONObject::ParseJSONValue(TEncoding::UTF8->GetBytes(dm->resp->JSONText),0)));
+TJSONObject* J_Data = static_cast<TJSONObject*>(JSON_Resp->Get("data")->JsonValue);
+TJSONArray* J_Skills = static_cast<TJSONArray*>(J_Data->Get("skills")->JsonValue);
+TJSONObject* J_Item;
+lvSkills->Items->Clear();
+for(int i=0; i < J_Skills->Count; i++)
+{
+    J_Item = static_cast<TJSONObject*>(J_Skills->Get(i));
+    TListViewItem *Skill_Item;
+    Skill_Item = lvSkills->Items->Add();
+    Skill_Item->Tag =  StrToInt(J_Item->GetValue("id")->ToString());
+    Skill_Item->Text = J_Item->GetValue("name")->ToString();
+}

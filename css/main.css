@@ -1,0 +1,118 @@
+    body
+    {
+        background: #424242;
+        background: url("/images/background2.jpg");
+        background-size: cover;
+    }
+    .wrapper
+    {
+        width: 1024px;
+        background: rgba(118, 118, 118, 0.8);
+        margin: auto;
+    }
+    header
+    {
+        position:relative;
+    }
+    .header-logo
+    {
+
+    }
+    .header-menu
+    {
+        position:absolute;
+        bottom:0;
+        height:75px;
+        margin-left:400px;
+    }
+    nav
+    {
+        border: 2px solid white;
+
+    }
+    nav ul li
+    {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    nav ul li a
+    {
+        text-decoration: none;
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+        font-style: italic; /* Курсивное начертание */
+    }
+    .clr
+    {
+        clear: both;
+    }
+
+    .left-column
+    {
+        float: left;
+        width: 350px;
+    }
+    .left-column ul a
+    {
+        margin-left: -10px;
+        text-decoration: none;
+        color: white;
+        vertical-align: middle;
+        text-align: center;
+        font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+        font-style: italic; /* Курсивное начертание */
+    }
+    a:hover
+    {
+        color: #940205;
+    }
+    .left-column ul
+    {
+        list-style-type: none;
+    }
+    .left-column ul li
+    {
+        padding: 5px;
+    }
+    .nav-button
+    {
+        background: white;
+        width: 200px;
+        height: 20px;
+        margin-left: 30px;
+    }
+    .nav-button a
+    {
+        text-decoration: none;
+        color: #940205;
+        vertical-align: middle;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .right-column
+    {
+        float: right;
+        width: 674px;
+    }
+    p, h2, h1
+    {
+        color: white;
+    }
+    footer
+    {
+        background: rgba(66, 66, 66, 0.51);
+        height: 50px;
+    }
+    footer .copyright p
+    {
+        padding-top: 20px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    .content
+    {
+        min-height: 768px;
+    }
